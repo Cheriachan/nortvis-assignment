@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nortvis.app.service.ImageServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-11-09T10:33:36" hostname="LAPTOP-QPC650E4" time="0.377">
+  <properties/>
+  <testcase name="testDeleteImage()" classname="com.nortvis.app.service.ImageServiceTest" time="0.193"/>
+  <testcase name="testAddImage()" classname="com.nortvis.app.service.ImageServiceTest" time="0.135"/>
+  <testcase name="testFetchImages()" classname="com.nortvis.app.service.ImageServiceTest" time="0.019"/>
+  <testcase name="testNoImageCase()" classname="com.nortvis.app.service.ImageServiceTest" time="0.013"/>
+  <testcase name="testEmptyImages()" classname="com.nortvis.app.service.ImageServiceTest" time="0.007"/>
+  <testcase name="testDeleteOnUserMismatch()" classname="com.nortvis.app.service.ImageServiceTest" time="0.007"/>
+  <system-out><![CDATA[2023-11-09T16:03:36.977+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : User testUser identified from the session
+2023-11-09T16:03:36.978+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : Image with id dd876b1c-f3ab-4747-8072-37665c6f621c deleted from Imgur client
+2023-11-09T16:03:36.978+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : ImageEntity with id dd876b1c-f3ab-4747-8072-37665c6f621c deleted from the database
+2023-11-09T16:03:36.986+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : image.jpeg successfully uploaded to Imgur client
+2023-11-09T16:03:36.987+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : Image persisted with id f455b926-417c-4eee-ac3b-48535e48ab04
+2023-11-09T16:03:37.120+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : Fetched user testUser from session
+2023-11-09T16:03:37.121+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : Fetched 1 images associated with testUser
+2023-11-09T16:03:37.143+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : Image not found in the database with id eca1836d-3854-4df1-8112-5ac4f972aa96
+2023-11-09T16:03:37.153+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : Fetched user testUser from session
+2023-11-09T16:03:37.154+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : Fetched 0 images associated with testUser
+2023-11-09T16:03:37.162+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : User testUser identified from the session
+2023-11-09T16:03:37.164+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.service.ImageService     : The image is not associated with the user
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

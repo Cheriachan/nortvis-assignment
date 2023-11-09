@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nortvis.app.service.UserServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-11-09T10:33:37" hostname="LAPTOP-QPC650E4" time="0.201">
+  <properties/>
+  <testcase name="testGetUserWhenUserExistsThenUserRetrieved" classname="com.nortvis.app.service.UserServiceTest" time="0.143"/>
+  <testcase name="testLoginUserWhenInvalidUsernameThenAppExceptionThrown" classname="com.nortvis.app.service.UserServiceTest" time="0.011"/>
+  <testcase name="testGetUserWhenUserIdNotFoundThenAppExceptionThrown" classname="com.nortvis.app.service.UserServiceTest" time="0.005"/>
+  <testcase name="testGetUserWhenUserDoesNotExistThenAppExceptionThrown" classname="com.nortvis.app.service.UserServiceTest" time="0.006"/>
+  <testcase name="testRegisterUserWhenUserDoesNotExistThenUserRegistered" classname="com.nortvis.app.service.UserServiceTest" time="0.006"/>
+  <testcase name="testLoginUserWhenInvalidPasswordThenAppExceptionThrown" classname="com.nortvis.app.service.UserServiceTest" time="0.007"/>
+  <testcase name="testLoginUserWhenCredentialsAreValidThenUserLoggedIn" classname="com.nortvis.app.service.UserServiceTest" time="0.011"/>
+  <testcase name="testRegisterUserWhenUserExistsThenAppExceptionThrown" classname="com.nortvis.app.service.UserServiceTest" time="0.005"/>
+  <system-out><![CDATA[2023-11-09T16:03:37.309+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.UserService      : User session verified and retrieved successfully
+2023-11-09T16:03:37.322+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.service.UserService      : Internal authentication service exception: null
+2023-11-09T16:03:37.328+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.service.UserService      : User with id null does not exist
+2023-11-09T16:03:37.335+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.service.UserService      : User with id 2d3a0d0a-a56e-43d2-8d0f-bc1cc9723287 does not exist
+2023-11-09T16:03:37.342+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.UserService      : User with username cherian_roy persisted with id 6faef85f-ff84-4ed7-a8c2-c488b85c566a
+2023-11-09T16:03:37.350+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.service.UserService      : Password exception: null
+2023-11-09T16:03:37.361+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.UserService      : Authentication successful for user null
+2023-11-09T16:03:37.361+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.service.UserService      : Verification successful and access token generated for user null
+2023-11-09T16:03:37.369+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.service.UserService      : A user already exists with username cherian_roy
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

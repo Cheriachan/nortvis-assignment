@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nortvis.app.controller.ImageControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-09T10:33:36" hostname="LAPTOP-QPC650E4" time="0.233">
+  <properties/>
+  <testcase name="testImagesFetch()" classname="com.nortvis.app.controller.ImageControllerTest" time="0.185"/>
+  <testcase name="testImagesDeletion()" classname="com.nortvis.app.controller.ImageControllerTest" time="0.019"/>
+  <testcase name="testImageUpload()" classname="com.nortvis.app.controller.ImageControllerTest" time="0.028"/>
+  <system-out><![CDATA[2023-11-09T16:03:36.301+05:30  INFO 19292 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-11-09T16:03:36.301+05:30  INFO 19292 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-09T16:03:36.302+05:30  INFO 19292 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-11-09T16:03:36.307+05:30  INFO 19292 --- [    Test worker] c.n.app.controller.ImageController       : Fetching images associated with the current user
+2023-11-09T16:03:36.308+05:30  INFO 19292 --- [    Test worker] c.n.app.controller.ImageController       : Images fetched:
+ImageVOList: [ImageVO(id=5054d0f2-3624-427a-9e9e-da5f65a4641e, imgurId=imgurId, url=url, deleteHash=deleteHash, createdAt=null)]
+2023-11-09T16:03:36.435+05:30  INFO 19292 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-11-09T16:03:36.435+05:30  INFO 19292 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-09T16:03:36.435+05:30  INFO 19292 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-11-09T16:03:36.437+05:30  INFO 19292 --- [    Test worker] c.n.app.controller.ImageController       : Deleting image a3a0acd1-a5b1-4d6f-80a5-869e83af3ab8
+2023-11-09T16:03:36.438+05:30  INFO 19292 --- [    Test worker] c.n.app.controller.ImageController       : Deletion successful
+2023-11-09T16:03:36.457+05:30  INFO 19292 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-11-09T16:03:36.457+05:30  INFO 19292 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-09T16:03:36.457+05:30  INFO 19292 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-11-09T16:03:36.464+05:30  INFO 19292 --- [    Test worker] c.n.app.controller.ImageController       : Upload image request for image.jpeg
+2023-11-09T16:03:36.465+05:30  INFO 19292 --- [    Test worker] c.n.app.controller.ImageController       : Image successfully uploaded to the client and DB:
+ImageVO: ImageVO(id=7bbd95f0-b10e-44c5-8250-924a537db408, imgurId=imgurId, url=url, deleteHash=deleteHash, createdAt=null)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

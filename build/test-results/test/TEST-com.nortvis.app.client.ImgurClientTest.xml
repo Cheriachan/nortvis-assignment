@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nortvis.app.client.ImgurClientTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-09T10:33:34" hostname="LAPTOP-QPC650E4" time="0.83">
+  <properties/>
+  <testcase name="testDeleteImageWithError()" classname="com.nortvis.app.client.ImgurClientTest" time="0.699"/>
+  <testcase name="testDeleteImage()" classname="com.nortvis.app.client.ImgurClientTest" time="0.021"/>
+  <testcase name="testUploadImageWithError()" classname="com.nortvis.app.client.ImgurClientTest" time="0.039"/>
+  <testcase name="testUploadImage()" classname="com.nortvis.app.client.ImgurClientTest" time="0.063"/>
+  <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+16:03:22.754 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nortvis.app.client.ImgurClientTest]: ImgurClientTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:03:22.983 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nortvis.app.AppApplication for test class com.nortvis.app.client.ImgurClientTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v3.2.0-SNAPSHOT)
+
+2023-11-09T16:03:23.934+05:30  WARN 19292 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.json/json/20231013/e22e0c040fe16f04ffdb85d851d77b07fc05ea52/json-20231013.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-11-09T16:03:23.979+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.client.ImgurClientTest   : Starting ImgurClientTest using Java 17.0.9 with PID 19292 (started by User in C:\Workspace\Assignments\nortvis-assignment)
+2023-11-09T16:03:23.981+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.client.ImgurClientTest   : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T16:03:25.750+05:30  INFO 19292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T16:03:25.881+05:30  INFO 19292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 2 JPA repository interfaces.
+2023-11-09T16:03:28.327+05:30  INFO 19292 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T16:03:29.181+05:30  INFO 19292 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:nortvis-assignment user=SA
+2023-11-09T16:03:29.185+05:30  INFO 19292 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T16:03:29.471+05:30  INFO 19292 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-09T16:03:29.647+05:30  INFO 19292 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-11-09T16:03:29.750+05:30  INFO 19292 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-11-09T16:03:30.079+05:30  INFO 19292 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T16:03:32.193+05:30  INFO 19292 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists images cascade 
+Hibernate: drop table if exists users cascade 
+Hibernate: create table images (created_at bigint, id uuid not null, user_id uuid, delete_hash varchar(255), imgur_id varchar(255), url varchar(255), primary key (id))
+Hibernate: create table users (created_at bigint, phone bigint, id uuid not null, email varchar(255), first_name varchar(255), last_name varchar(255), password varchar(255), username varchar(255), primary key (id))
+Hibernate: alter table if exists images add constraint FK13ljqfrfwbyvnsdhihwta8cpr foreign key (user_id) references users
+2023-11-09T16:03:32.256+05:30  INFO 19292 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T16:03:33.261+05:30  WARN 19292 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T16:03:33.885+05:30  INFO 19292 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75c8ba94, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@746f5752, org.springframework.security.web.context.SecurityContextHolderFilter@23c3f787, org.springframework.security.web.header.HeaderWriterFilter@1f6c0e8a, org.springframework.web.filter.CorsFilter@510c6b9, org.springframework.security.web.authentication.logout.LogoutFilter@15c48119, com.nortvis.app.config.JwtAuthenticationFilter@71c9c7f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@776ae580, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b0bcea5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c666872, org.springframework.security.web.session.SessionManagementFilter@1f9009d3, org.springframework.security.web.access.ExceptionTranslationFilter@7dfbdcfe, org.springframework.security.web.access.intercept.AuthorizationFilter@58453967]
+2023-11-09T16:03:34.531+05:30  INFO 19292 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:nortvis-assignment'
+2023-11-09T16:03:34.630+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.client.ImgurClientTest   : Started ImgurClientTest in 11.286 seconds (process running for 13.699)
+2023-11-09T16:03:35.358+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.client.ImgurClient       : Bad request to Imgur client
+2023-11-09T16:03:35.396+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.client.ImgurClient       : Image deleted from Imgur client
+2023-11-09T16:03:35.444+05:30 ERROR 19292 --- [    Test worker] com.nortvis.app.client.ImgurClient       : Bad request to Imgur client
+2023-11-09T16:03:35.460+05:30  INFO 19292 --- [    Test worker] com.nortvis.app.client.ImgurClient       : Image uploaded to Imgur client
+]]></system-out>
+  <system-err><![CDATA[[2023.11.09 16:03:23] (Coverage): Error during class instrumentation: org.springframework.aop.support.AopUtils: java.lang.RuntimeException: java.io.IOException: Class org/reactivestreams/Publisher not found
+[2023.11.09 16:03:23] (Coverage): Error during class instrumentation: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem: java.lang.RuntimeException: java.io.IOException: Class org/apache/logging/log4j/core/config/composite/CompositeConfiguration not found
+[2023.11.09 16:03:32] (Coverage): Error during class instrumentation: org.springframework.security.config.annotation.authentication.configurers.ldap.LdapAuthenticationProviderConfigurer: java.lang.RuntimeException: java.io.IOException: Class org/springframework/security/ldap/authentication/PasswordComparisonAuthenticator not found
+[2023.11.09 16:03:33] (Coverage): Error during class instrumentation: org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer: java.lang.RuntimeException: java.io.IOException: Class org/springframework/security/oauth2/client/endpoint/OAuth2AccessTokenResponseClient not found
+[2023.11.09 16:03:34] (Coverage): Error during class instrumentation: org.springframework.core.ReactiveAdapterRegistry$ReactorAdapter: java.lang.RuntimeException: java.io.IOException: Class reactor/core/publisher/Flux not found
+]]></system-err>
+</testsuite>

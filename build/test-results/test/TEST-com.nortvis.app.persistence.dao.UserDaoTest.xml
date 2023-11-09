@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nortvis.app.persistence.dao.UserDaoTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-09T10:33:36" hostname="LAPTOP-QPC650E4" time="0.079">
+  <properties/>
+  <testcase name="testSaveUser()" classname="com.nortvis.app.persistence.dao.UserDaoTest" time="0.07"/>
+  <testcase name="testFindUserByName()" classname="com.nortvis.app.persistence.dao.UserDaoTest" time="0.004"/>
+  <testcase name="testFindUserById()" classname="com.nortvis.app.persistence.dao.UserDaoTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

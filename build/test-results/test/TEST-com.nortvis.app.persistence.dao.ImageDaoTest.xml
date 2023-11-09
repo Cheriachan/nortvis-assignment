@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nortvis.app.persistence.dao.ImageDaoTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-11-09T10:33:36" hostname="LAPTOP-QPC650E4" time="0.163">
+  <properties/>
+  <testcase name="testImageDeletion()" classname="com.nortvis.app.persistence.dao.ImageDaoTest" time="0.147"/>
+  <testcase name="testFetchUserImages()" classname="com.nortvis.app.persistence.dao.ImageDaoTest" time="0.004"/>
+  <testcase name="testSaveImage()" classname="com.nortvis.app.persistence.dao.ImageDaoTest" time="0.006"/>
+  <testcase name="testFindImageById()" classname="com.nortvis.app.persistence.dao.ImageDaoTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
