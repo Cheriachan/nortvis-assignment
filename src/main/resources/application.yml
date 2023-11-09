@@ -1,0 +1,30 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+  datasource:
+    url: jdbc:h2:mem:nortvis-assignment
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    generateDdl: false
+    showSql: true
+  h2:
+    console.enabled: true
+  security:
+    jwt:
+      secret: e60e2396e6b97471a5437612656c2b5b9898f368982b356b7under6548b62620458
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui
+
+client:
+  imgur:
+    base-url: https://api.imgur.com/3
+    client-id: 6ca069555adbbf4
